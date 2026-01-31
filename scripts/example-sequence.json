@@ -1,0 +1,51 @@
+{
+  "sequences": [
+    {
+      "seq_number": 1,
+      "seq_delay_details": {
+        "delay_in_days": 0
+      },
+      "variant_distribution_type": "MANUAL_EQUAL",
+      "seq_variants": [
+        {
+          "subject": "Quick question about {{company}}",
+          "email_body": "<p>Hi {{first_name}},<br><br>I noticed {{company}} recently {{specific_observation}}.<br><br>Most {{job_title}}s I talk to struggle with {{pain_point}} - does this resonate with you?<br><br>We help companies like {{similar_company}} {{specific_benefit}}.<br><br>Worth a quick 15-minute chat?<br><br>Best,<br>{{sender_name}}</p>",
+          "variant_label": "A"
+        },
+        {
+          "subject": "{{first_name}}, quick question",
+          "email_body": "<p>Hi {{first_name}},<br><br>Do you ever feel like {{pain_point}}?<br><br>We built a tool that helps {{target_audience}} {{benefit}}.<br><br>{{client_name}} saw {{specific_metric}} in {{timeframe}}.<br><br>Want to see how?<br><br>Best,<br>{{sender_name}}</p>",
+          "variant_label": "B"
+        }
+      ]
+    },
+    {
+      "seq_number": 2,
+      "seq_delay_details": {
+        "delay_in_days": 3
+      },
+      "variant_distribution_type": "MANUAL_EQUAL",
+      "seq_variants": [
+        {
+          "subject": "How {{similar_company}} achieved {{result}}",
+          "email_body": "<p>{{first_name}},<br><br>Following up on my last email.<br><br>Wanted to share a quick case study:<br><br>{{similar_company}} was facing {{problem}}. Here's what they did:<br><br>• {{step_1}}<br>• {{step_2}}<br>• {{step_3}}<br><br>Result: {{impressive_outcome}}<br><br>Worth a conversation?<br><br>Best,<br>{{sender_name}}</p>",
+          "variant_label": "A"
+        }
+      ]
+    },
+    {
+      "seq_number": 3,
+      "seq_delay_details": {
+        "delay_in_days": 4
+      },
+      "variant_distribution_type": "MANUAL_EQUAL",
+      "seq_variants": [
+        {
+          "subject": "Should I close your file?",
+          "email_body": "<p>Hi {{first_name}},<br><br>I'm going to assume {{pain_point}} isn't a priority right now, so I'll close your file.<br><br>Before I do, one last thought:<br><br>{{compelling_stat_or_insight}}<br><br>If you ever want to {{desired_outcome}}, just reply 'interested' and I'll reopen this.<br><br>Best,<br>{{sender_name}}<br><br>P.S. If this isn't your thing, who on your team should I reach out to instead?</p>",
+          "variant_label": "A"
+        }
+      ]
+    }
+  ]
+}

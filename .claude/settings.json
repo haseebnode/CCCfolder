@@ -1,0 +1,121 @@
+{
+  "projectName": "Claude Code Course - Copywriting & Campaigns",
+  "projectDescription": "Learning environment for using Claude Code in marketing, copywriting, and campaign management workflows.",
+
+  "defaultModel": "sonnet",
+
+  "permissionMode": "default",
+
+  "hooks": {
+    "PreToolUse": [],
+    "PostToolUse": [],
+    "Stop": []
+  },
+
+  "allowedTools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Bash",
+    "Grep",
+    "Glob",
+    "WebSearch",
+    "WebFetch"
+  ],
+
+  "skills": {
+    "autoLoad": [
+      "email-sequence",
+      "improve-copy"
+    ],
+    "description": "Skills are loaded automatically based on context. Manual invocation with / also available."
+  },
+
+  "agents": {
+    "description": "Agents are automatically invoked when tasks match their descriptions.",
+    "available": [
+      "copywriter-agent",
+      "campaign-creator",
+      "content-researcher"
+    ]
+  },
+
+  "templates": {
+    "path": "./templates/",
+    "description": "Reusable copy templates for common formats"
+  },
+
+  "examples": {
+    "path": "./examples/",
+    "description": "Real session examples showing Claude Code workflows"
+  },
+
+  "sops": {
+    "path": "./sops/",
+    "description": "Standard operating procedures for consistent output"
+  },
+
+  "scripts": {
+    "path": "./scripts/",
+    "description": "Python scripts for Smartlead API automation",
+    "execution": "via Bash tool"
+  },
+
+  "brandVoice": {
+    "guidelines": "./sops/brand-voice-guidelines.md",
+    "checkBeforeWriting": true,
+    "attributes": [
+      "conversational",
+      "confident",
+      "helpful",
+      "clear",
+      "human"
+    ]
+  },
+
+  "campaigns": {
+    "platform": "Smartlead",
+    "checklist": "./sops/campaign-launch-checklist.md",
+    "metricsToTrack": [
+      "open_rate",
+      "reply_rate",
+      "bounce_rate",
+      "spam_complaints"
+    ],
+    "successCriteria": {
+      "open_rate": ">40%",
+      "reply_rate": ">5%",
+      "bounce_rate": "<2%",
+      "spam_complaints": "<0.1%"
+    }
+  },
+
+  "workflows": {
+    "copywriting": {
+      "steps": [
+        "Check brand voice",
+        "Review templates",
+        "Research audience",
+        "Draft copy",
+        "Get feedback",
+        "Iterate"
+      ]
+    },
+    "campaignLaunch": {
+      "steps": [
+        "Follow launch checklist",
+        "Validate leads",
+        "Send test email",
+        "Configure settings",
+        "Activate campaign",
+        "Monitor metrics"
+      ]
+    }
+  },
+
+  "notes": {
+    "usage": "This is a learning environment. Experiment with agents, skills, and automation.",
+    "documentation": "All workflows are documented in /sops/ and /examples/",
+    "scripts": "Python scripts in /scripts/ interact with Smartlead API"
+  }
+}
